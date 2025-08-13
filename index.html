@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="login-button-click-app-icon-vector-28806677-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Login | Page</title>
 </head>
 
 <body>
+    <!--<div class="box"></div>-->
     <div class="container-login" id="container-login">
 
-        <h2>Login!</h2>
+        <h2>Admin!</h2>
 
         <div class="button-form">
             <button class="button-admin">Admin</button>
-            <button class="button-user">User</button>
+            <button class="button-user" id="openUser">User</button>
         </div>
 
         <form action="" class="form-container">
@@ -63,6 +65,68 @@
 
         </form>
     </div>
+    <div class="container-user-form" id="container-user">
+
+        <h2>User!</h2>
+
+        <div class="button-form-user">
+            <button class="button-admin" id="openAdmin">Admin</button>
+            <button class="button-user">User</button>
+        </div>
+
+        <form action="" class="form-container-user">
+
+            <div class="input-group1-user">
+                <div class="input-icon">
+                    <i class="fa-solid fa-envelope"></i><input type="email" name="email" id="email" placeholder="Email"
+                        required>
+                </div>
+                <div id="error_message" class="email_error"></div>
+            </div>
+
+            <div class="input-group2-user">
+                <div class="input-icon">
+                    <i class="fa-solid fa-lock"></i><input type="password" name="pass" id="pass" placeholder="Password"
+                        required>
+                </div>
+                <div id="error_message" class="email_error"></div>
+            </div>
+
+            <div class="input-group2">
+                <div class="input-icon">
+                    <i class="fa-solid fa-lock"></i><input type="password" name="pass" id="pass"
+                        placeholder="Confirm Password" required>
+                </div>
+                <div id="error_message" class="email_error"></div>
+            </div>
+
+            <div class="checkbox-forgot-user">
+                <div class="checkbox-container">
+                    <input type="checkbox" name="checkbox" id="checkbox" required> <span>Remember me</span>
+                </div>
+                <div class="forgot-container">
+                    <a href="#">forgot password?</a>
+                </div>
+            </div>
+
+
+            <div class="login-container-user">
+                <button type="submit" onclick="login()">Login</button>
+            </div>
+
+            <div class="follow-user">
+                <i class="fa-brands fa-facebook" id="border-icon"></i>
+                <i class="fa-brands fa-google" id="border-icon"></i>
+                <i class="fa-brands fa-github" id="border-icon"></i>
+            </div>
+
+            <div class="signup-container-user">
+                <p>You must be registered</p><a href="">Sign up</a>
+            </div>
+
+        </form>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
