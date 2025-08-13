@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login | Page</title>
+</head>
+
+<body>
+    <div class="container-login" id="container-login">
+
+        <h2>Login!</h2>
+
+        <div class="button-form">
+            <button class="button-admin">Admin</button>
+            <button class="button-user">User</button>
+        </div>
+
+        <form action="" class="form-container">
+
+            <div class="input-group1">
+                <div class="input-icon">
+                    <i class="fa-solid fa-envelope"></i><input type="email" name="email" id="email" placeholder="Email"
+                        required>
+                </div>
+                <div id="error_message" class="email_error"></div>
+            </div>
+
+            <div class="input-group2">
+                <div class="input-icon">
+                    <i class="fa-solid fa-lock"></i><input type="password" name="pass" id="pass" placeholder="Password"
+                        required>
+                </div>
+                <div id="error_message" class="email_error"></div>
+            </div>
+
+            <div class="checkbox-forgot">
+                <div class="checkbox-container">
+                    <input type="checkbox" name="checkbox" id="checkbox" required> <span>Remember me</span>
+                </div>
+                <div class="forgot-container">
+                    <a href="#">forgot password?</a>
+                </div>
+            </div>
+
+
+            <div class="login-container">
+                <button type="submit" onclick="login()">Login</button>
+            </div>
+
+            <div class="follow">
+                <i class="fa-brands fa-facebook" id="border-icon"></i>
+                <i class="fa-brands fa-google" id="border-icon"></i>
+                <i class="fa-brands fa-github" id="border-icon"></i>
+            </div>
+
+            <div class="signup-container">
+                <p>You must be registered</p><a href="">Sign up</a>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
